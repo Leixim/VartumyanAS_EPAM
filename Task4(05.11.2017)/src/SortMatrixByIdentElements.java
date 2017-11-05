@@ -8,12 +8,8 @@ import java.util.Random;
 
 public class SortMatrixByIdentElements {
     public static void main(String[] args) {
-        System.out.println("Source matrix");
         int[][] matrix = generateMatrix(4, 5);
-        matrixToString(matrix);
         sortMatrixByIdentElements(matrix);
-        System.out.println("\n" + "Sorted matrix");
-        matrixToString(matrix);
     }
 
     public static int[][] generateMatrix(int lines, int columns) {
@@ -24,6 +20,8 @@ public class SortMatrixByIdentElements {
                 matrixInt[i][j] = randomInt.nextInt(2);
             }
         }
+        System.out.println("Source matrix");
+        matrixToString(matrixInt);
         return matrixInt;
     }
 
@@ -61,12 +59,14 @@ public class SortMatrixByIdentElements {
                     seqArray[j - 1] = seqArray[j];
                     seqArray[j] = temp;
                     for (int k = 0; k < matrix.length; k++) {
-                        int temp2 = matrix[j-1][k];
-                        matrix[j-1][k] = matrix[j][k];
+                        int temp2 = matrix[j - 1][k];
+                        matrix[j - 1][k] = matrix[j][k];
                         matrix[j][k] = temp2;
                     }
                 }
             }
         }
+        System.out.println("\n" + "Sorted matrix");
+        matrixToString(matrix);
     }
 }

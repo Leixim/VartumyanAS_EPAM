@@ -10,12 +10,8 @@ import java.util.Random;
 public class SortMatrixByAvgColumns {
 
     public static void main(String[] args) {
-        System.out.println("Source matrix");
         int[][] matrix = generateMatrix(5, 8);
-        matrixToString(matrix);
         sortMatrixByAvgColumns(matrix);
-        System.out.println("\n" + "Sorted matrix");
-        matrixToString(matrix);
     }
 
     public static int[][] generateMatrix(int lines, int columns) {
@@ -26,6 +22,8 @@ public class SortMatrixByAvgColumns {
                 matrixInt[i][j] = randomInt.nextInt(100);
             }
         }
+        System.out.println("Source matrix");
+        matrixToString(matrixInt);
         return matrixInt;
     }
 
@@ -62,5 +60,7 @@ public class SortMatrixByAvgColumns {
                 }
             }
         }
+        System.out.println("\n" + "Sorted matrix");
+        matrixToString(matrix);
     }
 }
