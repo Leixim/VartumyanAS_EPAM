@@ -58,7 +58,7 @@ public class SortMatrixByIdentElements {
                     int temp = seqArray[j - 1];
                     seqArray[j - 1] = seqArray[j];
                     seqArray[j] = temp;
-                    for (int k = 0; k < matrix.length; k++) {
+                    for (int k = 0; k < matrix[i].length; k++) {
                         int temp2 = matrix[j - 1][k];
                         matrix[j - 1][k] = matrix[j][k];
                         matrix[j][k] = temp2;
