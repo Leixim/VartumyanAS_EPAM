@@ -55,7 +55,7 @@ public class MainApp {
                 }
                 break;
             case 4:
-                for (int i = 0; i <vehicles.length ; i++) {
+                for (int i = 0; i < vehicles.length; i++) {
                     System.out.println(vehicles[i]);
                 }
                 break;
@@ -72,8 +72,6 @@ public class MainApp {
         System.out.println("3 - Vehicle with speed 200-500 and not Plane");
         System.out.println("4 - Print all vehicles");
         System.out.println("*************************************");
-
-
     }
 
 
