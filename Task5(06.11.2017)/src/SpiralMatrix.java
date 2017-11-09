@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class SpiralMatrix {
     public static void main(String[] args) {
-        int[][] matrix = generateSquareMatrix(7);
+        int[][] matrix = generateSquareMatrix(9);
         printMatrixBySpiral(matrix);
     }
 
