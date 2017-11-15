@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class SortMatrixByIdentElements {
     public static void main(String[] args) {
-        int[][] matrix = generateMatrix(4, 5);
+        int[][] matrix = generateMatrix(5, 4);
         sortMatrixByIdentElements(matrix);
     }
 
