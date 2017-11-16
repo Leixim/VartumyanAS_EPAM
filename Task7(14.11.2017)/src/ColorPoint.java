@@ -1,4 +1,4 @@
-public class ColorPoint extends Point {
+public class ColorPoint extends Point implements Color{
 
     private int color;
 

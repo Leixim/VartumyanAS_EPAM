@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Polygon {
     Point[] arrayPoint;
     Line[] arrayLine = new Line[arrayPoint.length];
@@ -21,5 +23,13 @@ public class Polygon {
 
     public void setArrayLine(Line[] arrayLine) {
         this.arrayLine = arrayLine;
+    }
+
+    @Override
+    public String toString() {
+        return "Polygon{" +
+                "arrayPoint=" + Arrays.toString(arrayPoint) +
+                ", arrayLine=" + Arrays.toString(arrayLine) +
+                '}';
     }
 }

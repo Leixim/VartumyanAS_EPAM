@@ -1,4 +1,4 @@
-public class ColorLine extends Line {
+public class ColorLine extends Line implements Color {
     private int color;
 
     public ColorLine(Point beg, Point end, int color) {

@@ -1,4 +1,4 @@
-public class ColorTriangle extends Triangle {
+public class ColorTriangle extends Triangle implements Color {
     private int color;
 
     public ColorTriangle(Point apexA, Point apexB, Point apexC, int color) {
