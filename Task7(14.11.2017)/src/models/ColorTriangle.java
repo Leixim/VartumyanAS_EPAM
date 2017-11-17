@@ -1,8 +1,13 @@
+package models;
+
 public class ColorTriangle extends Triangle implements Color {
     private int color;
 
-    public ColorTriangle(Point apexA, Point apexB, Point apexC, int color) {
+    public ColorTriangle(Point apexA, Point apexB, Point apexC, int color) throws IllegalArgumentException {
         super(apexA, apexB, apexC);
+        if (color < 0) {
+            throw new IllegalArgumentException("Invalid color");
+        }
         this.color = color;
     }
 
@@ -10,7 +15,10 @@ public class ColorTriangle extends Triangle implements Color {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(int color)throws IllegalArgumentException {
+        if (color < 0) {
+            throw new IllegalArgumentException("Invalid color");
+        }
         this.color = color;
     }
 
@@ -21,9 +29,6 @@ public class ColorTriangle extends Triangle implements Color {
                 ", apexA=" + apexA +
                 ", apexB=" + apexB +
                 ", apexC=" + apexC +
-                ", sideAB=" + sideAB +
-                ", sideBC=" + sideBC +
-                ", sideAC=" + sideAC +
                 "} " + super.toString();
     }
 }
